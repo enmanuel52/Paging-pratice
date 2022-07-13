@@ -21,6 +21,8 @@ object ApiModule {
         .addConverterFactory(GsonConverterFactory.create())
         .build()
 
+    @Singleton
+    @Provides
     fun provideApiService(
         retrofit: Retrofit
     ): ApiService = retrofit.create(ApiService::class.java)

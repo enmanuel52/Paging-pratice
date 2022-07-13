@@ -6,5 +6,5 @@ import javax.inject.Inject
 class GetCharactersByPage @Inject constructor(
     private val apiService: ApiService,
 ) {
-    operator fun invoke(page: Int) = apiService.getCharatersByPage(page).body()?.characters
+    operator fun invoke(page: Int) = apiService.getCharatersByPage(page)
 }
