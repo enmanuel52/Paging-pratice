@@ -12,9 +12,11 @@ import androidx.recyclerview.widget.GridLayoutManager
 import com.example.paging.R
 import com.example.paging.databinding.FragmentMainBinding
 import com.example.paging.view.adapter.MainAdapter
+import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch
 
+@AndroidEntryPoint
 class MainFragment : Fragment() {
 
     private lateinit var _binding: FragmentMainBinding
